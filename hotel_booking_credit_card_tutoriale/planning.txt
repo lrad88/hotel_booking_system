@@ -1,0 +1,13 @@
+What can users do on this app ?
+
+- user can see a list of hotels
+- user can book a hotel
+- user can get a reservation ticket
+
+What classes do you want to use ?
+
+Classes:
+
+User
+Hotel
+ReservationTicket
