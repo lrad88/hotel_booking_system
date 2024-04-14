@@ -1,4 +1,3 @@
-
 # this is my version of extending the classes and capabilities of an object
 # oriented program
 
@@ -9,28 +8,30 @@
 # when you want to add new features to a program you dont modify
 # existing classes you just create new ones
 
+
 import pandas as pd
 
-df = pd.read_csv("/Users/khronikle/Desktop/"
-                 "PycharmProjects/various/UdemyLessons/web-app3/"
-                 "OOP_inheritance_tutorial/hotel_booking_credit_card_tutoriale/"
-                 "hotels.csv", dtype={"id": str})
+df = pd.read_csv("/Users/khronikle/Desktop/PycharmProjects/"
+                 "various/UdemyLessons/web-app3/OOP_tutorial/"
+                 "hotel_booking_credit_card_tutoriale/hotels.csv",
+                 dtype={"id": str})
 # dtype=str loads all csv data as strings, including the numbers, which
 # will help to get rid of ValueErrors, but the better option would be
 # to use dtype={"id":str} which will only load the id column as a string
 
-df_cards = (pd.read_csv("/Users/khronikle/Desktop/"
-                        "PycharmProjects/various/UdemyLessons/web-app3/"
-                        "OOP_inheritance_tutorial/hotel_booking_credit_card_tutoriale/"
-                        "cards.csv", dtype=str).to_dict(orient="records"))
+df_cards = (pd.read_csv("/Users/khronikle/Desktop/PycharmProjects/"
+                        "various/UdemyLessons/web-app3/OOP_tutorial/"
+                        "hotel_booking_credit_card_tutoriale/cards.csv",
+                        dtype=str).to_dict(orient="records"))
 # .to_dict can actually load the dataframe as a dictionary
 
 # notice how the methods relate to class eg.
 # Hotel -> book, or ReservationTicket -> generate
 
-df_cards_security = pd.read_csv("/Users/khronikle/"
-                                "Desktop/PycharmProjects/various/UdemyLessons/web-app3/"
-                                "OOP_inheritance_tutorial/hotel_booking_credit_card_tutoriale/"
+df_cards_security = pd.read_csv("/Users/khronikle/Desktop/"
+                                "PycharmProjects/various/UdemyLessons/"
+                                "web-app3/OOP_tutorial/"
+                                "hotel_booking_credit_card_tutoriale/"
                                 "card_security.csv", dtype=str)
 
 
